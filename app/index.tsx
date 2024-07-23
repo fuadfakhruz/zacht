@@ -1,15 +1,23 @@
-import { Text, View } from "react-native";
+import { SafeAreaView, Text, View, StyleSheet } from "react-native";
 
 export default function Index() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
-    </View>
+    <SafeAreaView style={styles.container}>
+      <Text style={styles.teks}>Halo kontol!</Text>
+    </SafeAreaView>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    display: "flex",
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  teks: {
+    fontSize: 20,
+    fontWeight: "bold",
+    fontFamily: "sans-serif",
+  },
+});
